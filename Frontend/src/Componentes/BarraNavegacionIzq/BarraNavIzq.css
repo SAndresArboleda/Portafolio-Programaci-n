@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding:0;
+}
+
+#navIzq{
+    background-color: chartreuse;
+    display: block;
+    width:20vw;
+    
+
+}
+#navIzq .NavIzq{
+    background-color: rgb(43, 226, 134);
+    display: block;
+    width:20vw;
+    height: 85vw;
+    /* margin: auto; */
+
+}
+
+.opcionesBarrNavIzq{
+    background-color: rgb(196, 38, 205);
+    width: 22vw;
+    height: auto;
+}

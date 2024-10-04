@@ -1,0 +1,22 @@
+/* body{
+background: #111;
+font-family: Helvetica Neue,Helvetica, Arial, sans-serif;
+font-size: 14px;
+color: #000;
+margin: 0;
+padding: 0;
+height: 100h;
+display: flex;
+Justify-content: center;
+align-items: center;
+}
+.swiper-container {
+width: 100%;
+padding-top: 58px;
+padding-bottom: 88px;
+}
+.swiper-slide {
+background-position: center;
+background-size: cover;
+width: 300px;
+} */

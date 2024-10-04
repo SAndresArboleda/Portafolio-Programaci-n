@@ -1,0 +1,63 @@
+/* Estilos base para el contenedor */
+.demo {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px auto;
+  }
+  
+  /* Estilos para el input */
+  .demo_text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateY(20px);
+    will-change: opacity, transform;
+    pointer-events: none; /* Inicialmente no permite interacciones */
+    transition: all 0.4s;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 10px;
+  }
+  
+  /* Cambiar estilos cuando el input está en estado de procesamiento */
+  .demo.s--processing .demo_text,
+  .demo_text--step-0 {
+    opacity: 1; /* Hacer visible */
+    transform: translateY(0); /* Volver a su posición original */
+    pointer-events: auto; /* Permitir interacciones (clics y escritura) */
+  }
+  
+  /* Estilo de puntos animados */
+  .demo_text-dots:before,
+  .demo_text-dots:after {
+    content: ".";
+    opacity: 0;
+  }
+  
+  /* Pseudoelementos */
+  .demo_text-dots--before,
+  .demo_text-dots--after {
+    opacity: 0;
+    animation: dotAnimation 1.2s infinite;
+  }
+  
+  /* Animación para los puntos */
+  @keyframes dotAnimation {
+    10%, 90% {
+      opacity: 0;
+    }
+    40%, 60% {
+      opacity: 1;
+    }
+  }
+  

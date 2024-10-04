@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#formulario1 {
+    /* background-color: aqua; */
+    width: 350px;
+    height: 40vh;
+    background: url('https://cards.algoreducation.com/_next/image?url=https%3A%2F%2Ffiles.algoreducation.com%2Fproduction-ts%2F__S3__9691abed-ff1f-4b6b-aa55-e8acbc7366bb&w=3840&q=75');
+    background-size: cover;
+    /* O "contain" dependiendo de cómo quieres que se ajuste la imagen */
+    background-position: center;
+    /* Centra la imagen en la página */
+    background-repeat: no-repeat;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid rgb(95, 77, 77);
+    border-radius: 5px;
+}
+
+/* #formulario1 .contFormulario1{
+    border: 2px solid gray;
+    padding: 8px;
+} */
+.contFormulario1 h2 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.contFormulario1 .ContFormulario1 {
+    /* background-color: aqua; */
+    font-family: "Plus Jakart Sans", sans-serif;
+    padding: 10px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.contFormulario1 .label {
+    width: max-content;
+    margin: 20px auto;
+    display: grid;
+    grid-template-areas: "input";
+}
+
+.contFormulario1 .input {
+    grid-area: input;
+    width: 250px;
+    font: inherit;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: .7rem 1.5rem;
+}
+
+#formulario1 .contFormulario1 .label__name {
+    grid-area: input;
+    z-index: 100;
+    width: max-content;
+    margin-left: 1rem;
+    padding: 0.5rem;
+    padding-top: 0rem;
+    align-self: center;
+    height: 38%;
+    display: flex;
+    align-items: center;
+    transition: transform .2s;
+    transform-origin: center left;
+}
+
+.contFormulario1 .input:focus+.label__name,
+.contFormulario1 .input:not(:placeholder-shown)+.label__name {
+    transform: translateY(-80%) scale(.7);
+    background-color: white;
+    border-radius: 5px;
+    padding-bottom: 0rem;
+
+
+}
+
+#formulario1 .boton {
+    color: black;
+    display: flex;
+    justify-content: center;
+    font: 800;
+    font-size: 46px;
+}
+#formulario1 .boton button{
+    font: 800;
+    font-size: 16px;
+    padding: 3px;
+    border-radius: 5px;
+    border:solid 0.1px rgb(234, 190, 101);
+    background-color: rgb(234, 190, 101);
+    cursor: pointer;
+}

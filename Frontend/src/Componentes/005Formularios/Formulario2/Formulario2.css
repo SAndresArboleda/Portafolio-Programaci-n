@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.Formulario2 {
+    background:
+        repeating-conic-gradient(from 30deg, #0000 0 120deg, #000513 0 180deg) 20px 11.54px,
+        repeating-conic-gradient(from 30deg, #000000 0 60deg, #0040ff 0 120deg, #000513 0 180deg);
+    background-size: 40px 23px;
+    align-content: center;
+    height: 40vh;
+}
+
+#formulario2 {
+    display: grid;
+    width: 80%;
+    height: 38vh;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+}
+
+#formulario2 h2 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#formulario2 .seccion-informacion {
+    flex-basis: 65%;
+    padding: 0 15px;
+    align-content: center;
+}
+
+#formulario2 .seccion-botones {
+    flex-basis: 35%;
+    align-content: center;
+}
+
+
+#formulario2 .inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#formulario2 input {
+    height: 25px;
+    margin: 1px auto;
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding-left: 15px;
+    border-bottom: 1px solid #000;
+}
+
+#formulario2 input:focus {
+    border-bottom: 2px solid #0040ff;
+}
+
+#formulario2 input:focus+label::before,
+.input-con-texto+label::before {
+    top: -40px;
+    left: -15px;
+    color: #0040ff;
+    font-size: 12px;
+}
+
+.contenedor-contraseña {
+    position: relative;
+}
+
+#formulario2 .mostrar-contraseña {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    font-size: 10px;
+    color: #999;
+    text-align: right;
+    cursor: pointer;
+}
+
+#mostrar-contraseña-1 {
+    top: 120px;
+}
+
+#mostrar-contraseña-2 {
+    top: 120px;
+}
+
+#formulario2 .seccion-botones {
+    display: grid;
+    justify-items: center;
+}
+
+#formulario2 label {
+    width: 20px;
+    color: #777;
+}
+
+label::before {
+    font-size: 12px;
+    transform: translateY(-80%) scale(.7);
+    content: "Nombre";
+    position: relative;
+    top: -40px;
+    padding-left: 15px;
+    background-color: #f2f2f2;
+    z-index: -1;
+}
+
+.label-email::before {
+    content: "Email"
+}
+
+.label-contraseña::before {
+    content: "Contraseña"
+}
+
+.label-confirmar-contraseña::before {
+    content: "Confirmar Contraseña"
+}
+
+#formulario2 .seccion-botones button {
+    height: 18px;
+    width: 100px;
+    border-radius: 50px;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    background-color: #0040ff;
+
+}
+
+
+#formulario2 .seccion-botones p {
+    margin-top: 20px;
+    color: #444;
+    font-size: 14px;
+}
+
+#formulario2 .seccion-botones p a {
+    text-decoration: none;
+    color: #004aca;
+    font-weight: 600;
+}
+
+@media screen and (max-width:800px) {
+    button {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #formulario2 .formulario {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    #formulario2 h2 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #formulario2 .seccion-informacion {
+        padding: 0 10px;
+    }
+
+    #formulario2 .inputs {
+        margin-top: 10px;
+    }
+
+    #formulario2 input {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    #formulario2 label {
+        position: relative;
+        font-size: 14px;
+    }
+
+    .mostrar-contraseña {
+        top: 50px;
+    }
+
+    #mostrar-contraseña-2 {
+        margin: 0 auto;
+    }
+
+    #formulario2 .seccion-botones {
+        margin: 0 auto;
+    }
+
+    #formulario2 button {
+        margin-top: 20px;
+        height: 60px;
+        margin-left: 15px;
+        width: 200px;
+    }
+
+    #formulario2 p {
+        text-align: center;
+    }
+}
+
+
+
+
+
+/* .inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input {
+    height: 40px;
+    margin: 10px auto;
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding-left: 15px;
+    border-bottom: 1px solid #000;
+}
+
+input:focus {
+    border-bottom: 2px solid #0040ff;
+}
+
+input:focus+label::before,
+.input-con-texto+label::before {
+    top: -62px;
+    left: -15px;
+    color: #0040ff;
+    font-size: 12px;
+}
+
+.contenedor-contraseña {
+    position: relative;
+}
+
+.mostrar-contraseña {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    font-size: 12px;
+    color: #999;
+    text-align: right;
+    cursor: pointer;
+}
+
+
+label {
+    position: relative;
+    width: 200px;
+    color: #777;
+}
+
+label::before {
+    content: "Nombre";
+    position: relative;
+    top-40px;
+    padding-left: 15px;
+    background-color: #f2f2f2;
+    z-index: -1;
+}
+
+label-email::before {
+    content: "Email";
+}
+
+label-contraseña::before {
+    content: "Contraseña";
+}
+
+label-confirmar-contraseña::before {
+    content: "Confirmar Contraseña";
+}
+
+button {
+    height: 80px;
+    width: 200px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    background-color: #0040ff;
+}
+
+.mostrar-contraseña {
+    font-size: 12px;
+    color: #999;
+    text-align: right;
+    cursor: pointer;
+}
+
+
+
+button {
+    border: none;
+    background-color: #0040ff
+}
+
+.mostrar-contraseña {
+    font-size: 12px;
+    color: #999;
+    text-align: right;
+    cursor: pointer;
+}
+
+p {
+    margin-top: 20px;
+    color: #444;
+    font-size: 14px;
+}
+
+p a {
+    text-decoration: none;
+    color: #004c00;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 800px) {
+    button {
+        width: 150px;
+    }
+} */

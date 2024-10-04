@@ -1,0 +1,60 @@
+.Formulario4{
+    /* background-color: #4f4caf; */
+    width: 350px;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.register-card{
+    max-width: 350px;
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    padding: 6px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background-color: #dcdcdc;
+}
+.register-card h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.register-form{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap:8px;
+    padding-top: 16px;
+ 
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+
+}
+.form-group label{
+    margin-bottom: 1px;
+}
+.form-group input{
+    padding: 2px;
+    border-radius: 4px;
+    border: 1px  solid #ccc;
+    box-sizing: border-box;
+}
+.full-width{
+    grid-column: span 2;
+}
+.register-button{
+    width:100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}.register-button:hover{
+    background-color: #45a049;
+}

@@ -1,0 +1,22 @@
+#ContListadoJuegos{
+    /* background-color: #8a2be2; */
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+#ContListadoJuegos .Listado{
+    background-color: burlywood;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 30vw;
+    width: 20vw;
+}
+#ContListadoJuegos .Juegos{
+    background-color: blue;
+    height: 43vw;
+    width: 100%;
+
+}

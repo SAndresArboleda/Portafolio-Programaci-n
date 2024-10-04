@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #spaiderman img {
+        width: 100px;
+        height: auto;
+        border-radius: 50px;
+    }
+
+    #spaiderman {
+        /* background-color: aqua; */
+        width: 300px;
+        height: 400px;
+        display: grid;
+        align-items: center;
+        text-align: center;
+        border: solid rgb(235, 235, 235) 0.5px;
+    }
+
+    #spaiderman article {
+        height: 150px;
+        overflow: hidden;
+        transition: height .5s;
+        interpolate-size: allow-keywords;
+    }
+
+    #spaiderman article:hover {
+        height: auto;
+    }
+</style>
+
+<body>
+    <div id="spaiderman">
+        <article>
+            <img src="spaiderman.png" alt="" />
+            <h1>Spaiderman</h1>
+            <p>Spider-Man, traducido en ocasiones como el Hombre Araña, es un superhéroe ficticio creado por los
+                estadounidenses Stan Lee y Steve Ditko, e introducido en el cómic Amazing Fantasy n.° 15, publicado por
+                Marvel Comics en agosto de 1962</p>
+        </article>
+    </div>
+</body>
+
+</html>

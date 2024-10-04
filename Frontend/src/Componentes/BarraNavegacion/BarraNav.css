@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .navbar {
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 1.5px solid rgba(255, 255, 255, 0.18);
+} */
+
+#navPpal {
+    display: flex;
+    height: 60px;
+}
+
+#navPpal .logNavPpal {
+    display: flex;
+    justify-items: center;
+    background-color: rgb(249, 243, 243);
+}
+
+#navPpal .logNavPpal .logoPpal a {
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+#navPpal .logNavPpal .logoPpal {
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(77, 79, 97, 0.37);
+    border: 1.5px solid rgba(255, 255, 255, 0.18);
+    font-size: 32px;
+    width: 20vw;
+    font-family: sans-serif;
+    font-weight: 900;
+    background: linear-gradient(90deg, #00ffff, #ff80c3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* #navPpal .logNavPpal .logoPpal:hover {
+    background: linear-gradient(90deg, #189444, #ff80c3);
+
+
+} */
+
+#navPpal .navSupOptions {
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(77, 79, 97, 0.37);
+    border: 1.5px solid rgba(255, 255, 255, 0.18);
+    /* background-color: #ff80c3; */
+    width: 68vw;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: rgb(249, 243, 243);
+
+}
+
+
+.navSupOptions h2 {
+    background-color: violet;
+    width: 10vw;
+}
+
+.ContReloj {
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(77, 79, 97, 0.37);
+    border: 1.5px solid rgba(255, 255, 255, 0.18);
+    /* background-color: blue; */
+    width: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navPpal .Cards{
+    text-decoration: none;
+    font-size: 18px;
+    
+}

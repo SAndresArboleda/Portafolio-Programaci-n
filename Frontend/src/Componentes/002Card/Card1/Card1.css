@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#spaiderman {
+    /*debe traer todas las card: */ 
+    /* background-color: aqua; */
+    /*debe traer todas las card: */
+    width: 350px;
+    /*debe traer todas las card: */
+    height: 40vh;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    border: solid rgb(235, 235, 235) 0.1px;
+}
+
+#spaiderman article {
+    height: 150px;
+    overflow: hidden;
+    transition: height .5s;
+    interpolate-size: allow-keywords;
+}
+
+#spaiderman article:hover {
+    height: auto;
+}
+
+#spaiderman img {
+    width: 150px;
+    height: auto;
+    border-radius: 80px;
+    border: solid gray .5px;
+}
