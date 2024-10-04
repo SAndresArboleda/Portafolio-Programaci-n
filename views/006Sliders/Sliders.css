@@ -1,8 +1,0 @@
-#seccionSliders{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;  /*ancho de fracciones segun # columnas*/
-    grid-template-rows: 300px 300px 300px 300px;  /*alto segun filas*/
-    grid-gap: 0px; /*espacio entre celdas*/
-    align-items: center;
-    justify-items: center;
-}
